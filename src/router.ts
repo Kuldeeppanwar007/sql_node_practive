@@ -4,7 +4,10 @@ import { Router } from "express";
 const router = Router();
 
 // product routes
-router.get('/product', (req, res) => { })
+
+router.get('/product', (req, res) => {
+    res.json({ message: 'working fine' });
+})
 router.get('/product/:id', (req, res) => { })
 router.put('/product/:id', (req, res) => { })
 router.post('/product', (req, res) => { })
