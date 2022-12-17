@@ -8,7 +8,9 @@ import { protect } from './modules/auth';
 
 const app = express();
 app.use(cors())
-app.use(morgan('dev'));
+app.use(/* A middleware that logs all the requests to the console. */
+/* A middleware that logs all the requests to the console. */
+morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
